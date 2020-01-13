@@ -1,0 +1,25 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+	$("#p1").on({
+        mouseenter:function(){
+            $(this).css("background-color","yellow");
+        },
+        mouseleave:function(){
+            $(this).css("background-color","lightblue");
+        },
+        click:function(){
+            $(this).css("background-color","green");
+        }
+    });
+});
+</script>
+</head>
+<body>
+<p id="p1">hello</p>
+<p>hi</p>
+</body>
+</html>
