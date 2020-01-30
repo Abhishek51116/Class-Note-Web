@@ -4,7 +4,7 @@
 </script>
 <script>
 $(document).ready(function(){
-$("#btn1").click(function(){
+
     var div = $("div");
     startAnimation();
     function startAnimation(){
@@ -13,14 +13,13 @@ $("#btn1").click(function(){
         div.css("background-color","blue");
         div.animate({left:'0px'},function(){div.css("background-color","pink");});
         div.animate({top:'0px'},function(){div.css("background-color","yellow");});
-        
+        startAnimation();
     }
-})
 });
 </script>
 </head>
 <body>
-<button id="btn1">Animation</button>
+
     <div id="box" style="background-color: green; width:100px;height: 100px; position: relative;"></div>
 
 </body>
