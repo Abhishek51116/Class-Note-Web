@@ -1,0 +1,31 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+$("#start").click(function(){
+    $("div").animate({left:'500px'},5000);
+    $("div").animate({fontSize:'3em'},5000);
+    });
+    $("#stop").click(function(){
+        $("div").stop();
+    });
+    $("#stop2").click(function(){
+        $("div").stop(true);
+    });
+    $("#stop3").click(function(){
+         $("div").stop(true,true);
+    });
+});
+</script>
+</head>
+<body>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <button id="stop2">Stop All</button>
+    <button id="stop3">Stop but finish</button>
+    <div id="box" style="background-color: green; width:100px;height: 100px; position: absolute;">Hello!</div>
+
+</body>
+</html>
