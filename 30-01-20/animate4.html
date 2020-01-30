@@ -1,0 +1,27 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+$("#btn1").click(function(){
+    var div = $("div");
+    startAnimation();
+    function startAnimation(){
+        div.animate({left:'150px'},function(){div.css("background-color","green");});
+        div.animate({top:'50px'},function(){div.css("background-color","red");});
+        div.css("background-color","blue");
+        div.animate({left:'0px'},function(){div.css("background-color","pink");});
+        div.animate({top:'0px'},function(){div.css("background-color","yellow");});
+        
+    }
+})
+});
+</script>
+</head>
+<body>
+<button id="btn1">Animation</button>
+    <div id="box" style="background-color: green; width:100px;height: 100px; position: relative;"></div>
+
+</body>
+</html>
